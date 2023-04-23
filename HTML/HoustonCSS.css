@@ -1,0 +1,18 @@
+body {
+
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: justify;
+    width: 70%
+  }  
+h1, h2, h3, h4 {
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
