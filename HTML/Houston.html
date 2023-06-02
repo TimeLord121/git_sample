@@ -4,9 +4,25 @@
 
 <head>
     <link rel="stylesheet" href="HoustonCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Хьюстон</h1>
+<header class="header">
+    <a class="header__link" href="#houston" >Начало</a>
+    <a class="header__link" href="#title" >Содержание</a>
+    <a class="header__link" href="#Istoria">История</a>
+    <a class="header__link" href="#Fiziko-Geograf">Физико-географическая характеристика</a>
+    <a class="header__link" href="#Economic">Экономика</a>
+    <a class="header__link" href="#Naselenie">Население</a>
+    <a class="header__link" href="#Sredstva">Средства массовой информации</a>
+    <a class="header__link" href="#Goroda">Города-побратимы</a>
+</header>
+
+<div>
+    <h1 id="houston" class="intro">Хьюстон</h1>
+    <img class="intro" src="img/intro.png">
     <p>
         <strong>Хьюстон</strong> 
         (англ. Houston) — четвёртый по количеству жителей город в Соединённых Штатах Америки
@@ -28,67 +44,68 @@
         имени Линдона Джонсона, крупнейший американский по международным грузоперевозкам порт,
         хьюстонский судоходный канал, крупнейший в мире Техасский медицинский центр.
     </p>
-    
-    <h2>Содержание</h2>
-    <ol>
+</div>
+
+    <h2 id="title">Содержание</h2>
+    <ol class="nav">
         <li>
-            <a href="#Istoria">История</a>
+            <a class="nav__link" href="#Istoria">История</a>
             <ol>
                 <li>
-                    <a href="#Etimologia">Этимология, произвища</a>
+                    <a class="nav__link" href="#Etimologia">Этимология, произвища</a>
                 </li>
                 <li>
-                    <a href="#Osnovanie">Основание</a>
+                    <a class="nav__link" href="#Osnovanie">Основание</a>
                 </li>
                 <li>
-                    <a href="#20 vek">20 Век</a> 
+                    <a class="nav__link" href="#20 vek">20 Век</a> 
                 </li>
             </ol>
         </li>
         <li> 
-            <a href="#Fiziko-Geograf">Физико-географическая характеристика</a>
+            <a class="nav__link" href="#Fiziko-Geograf">Физико-географическая характеристика</a>
             <ol>
                 <li>
-                    <a href="#Geograf">Географическое положение и климат</a>
+                    <a class="nav__link" href="#Geograf">Географическое положение и климат</a>
                 </li>
                 <li>
-                    <a href="#Relef">Рельеф, внутренние воды</a>
+                    <a class="nav__link" href="#Relef">Рельеф, внутренние воды</a>
                 </li>
                 <li>
-                    <a href="#Flora">Флора и фауна</a>
+                    <a class="nav__link" href="#Flora">Флора и фауна</a>
                 </li>
             </ol>
         </li>
         <li>
-            <a href="#Economic">Экономика</a>
+            <a class="nav__link" href="#Economic">Экономика</a>
             <ol>
                 <li>
-                    <a href="#Status">Общее состояние</a>
+                    <a class="nav__link" href="#Status">Общее состояние</a>
                 </li>
                 <li>
-                    <a href="#Energic">Энергетика и нефтехимия</a>
+                    <a class="nav__link" href="#Energic">Энергетика и нефтехимия</a>
                 </li>
                 <li> 
-                    <a href="#Avia">Авиакосмическая промышленность</a>
+                    <a class="nav__link" href="#Avia">Авиакосмическая промышленность</a>
                 </li>
             </ol>
         </li>
         <li>
-            <a href="#Naselenie">Население</a>
+            <a class="nav__link" href="#Naselenie">Население</a>
             <ol>
                 <li>
-                    <a href="#Dinamika">Динамика и структура населения</a>
+                    <a class="nav__link" href="#Dinamika">Динамика и структура населения</a>
                 </li>
                 <li>
-                    <a href="#Etnicheskiy">Этнический и конфессиональный состав, языки</a>
+                    <a class="nav__link" href="#Etnicheskiy">Этнический и конфессиональный состав, языки</a>
                 </li>
             </ol>
         </li>
         <li>
-            <a href="#Sredstva">Средства массовой информации</a>
+            <a class="nav__link" href="#Sredstva">Средства массовой информации</a>
         </li>
         <li>
-            <a href="#Goroda">Города-побратимы</a>
+            <a class="nav__link" href="#Goroda">Города-побратимы</a>
         </li>
     </ol>
     
@@ -499,7 +516,7 @@
             src="img/Houston_Ship_Channel.jpg"
             title="Хьюстонский судоходный канал"
             >
-            <figure>Хьюстонский судоходный канал</figure>
+            <figcaption>Хьюстонский судоходный канал</figcaption>
         </figure>
     </div>
     
@@ -709,7 +726,7 @@
     <div>
         <figure>
             <img
-            src="file:/Users/Alexander/Desktop/Git/HTML/Race_and_ethnicity_2010_Houston.png"
+            src="img/Race_and_ethnicity_2010_Houston.png"
             title="Этническая карта Хьюстона"
             >
             <figcaption>Этническая карта Хьюстона</figcaption>
@@ -806,6 +823,9 @@
         <li>Шэньчжэнь (Китай);</li>
         <li>Басра (Ирак)</li>
     </ul>
-
+<div class="footer">
+    <a href="https://ru.freepik.com/free-photo/volume-abstract-graphic-loneliness-desk_1123167.htm#query=%D1%84%D0%BE%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0&position=3&from_view=keyword&track=ais">Изображение от benzoix</a> на Freepik
+</div>
 </body>
 </html>
+

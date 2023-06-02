@@ -1,19 +1,130 @@
 body {
     width: 70%;
     margin: auto;
+
+    color: black;
+
+    background:
+    url("../HTML/img/Background.jpg") center
+    no-repeat;
+    -webkit-background-size: cover; 
+    background-size: cover;
   }
-  
+
+
+/* H */
   h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kaushan Script', cursive;
     margin-top: 1.5em;
+
   }
-  
+
   h1 {
-    font-size: 32px;
+    font-size: 52px;
+    border-bottom: 3px solid black;
+    position: relative;
   }
+
   
+/* Header */
+.header {
+  position: fixed;
+  top: 0px;
+  left: 5px;
+  width: 5%;
+  font-size: 20px;
+}
+.header__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+  border-bottom: 1px solid black;
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color .1s linear;
+}
+.header__link:after {
+content: "";
+display: block;
+width: 100%;
+height: 1px;
+
+background-color: #ff04f2;
+opacity: 0;
+
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1;
+
+transition: opacity .1s linear;
+}
+.header__link:hover {
+  color: rgb(38, 0, 255);
+}
+.header__link:hover:after {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+/* intro */
+.intro {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+  /* Nav */
+.nav {
+  font-size: 14px;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color .1s linear;
+}
+.nav__link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background-color: #ff04f2;
+  opacity: 0;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+  color: rgb(38, 0, 255);
+}
+.nav__link:hover:after {
+  display: block;
+  opacity: 1;
+}
+
+
+/* Table */
   table {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
   }
   
   figure {
@@ -23,3 +134,13 @@ body {
   figcaption {
     font-style: italic;
   } 
+
+
+/* Footer */
+.footer {
+  position:relative;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color: #ffffff;
+}
