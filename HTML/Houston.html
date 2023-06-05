@@ -7,18 +7,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="Houston.js"></script>
 </head>
 <body>
-<header class="header">
-    <a class="header__link" href="#houston" >Начало</a>
-    <a class="header__link" href="#title" >Содержание</a>
-    <a class="header__link" href="#Istoria">История</a>
-    <a class="header__link" href="#Fiziko-Geograf">Физико-географическая характеристика</a>
-    <a class="header__link" href="#Economic">Экономика</a>
-    <a class="header__link" href="#Naselenie">Население</a>
-    <a class="header__link" href="#Sredstva">Средства массовой информации</a>
-    <a class="header__link" href="#Goroda">Города-побратимы</a>
-</header>
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Меню страницы</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a class="drop__link" href="#houston" >Начало</a>
+        <a class="drop__link" href="#title" >Содержание</a>
+        <a class="drop__link" href="#Istoria">История</a>
+        <a class="drop__link" href="#Fiziko-Geograf">Физико-географическая характеристика</a>
+        <a class="drop__link" href="#Economic">Экономика</a>
+        <a class="drop__link" href="#Naselenie">Население</a>
+        <a class="drop__link" href="#Sredstva">Средства массовой информации</a>
+        <a class="drop__link" href="#Goroda">Города-побратимы</a>
+        <a href="#" class="js-open-modal drop__link" data-modal="1">Автор сайта</a>
+    </div>
+</div>
+
+<!--   Переделанная копипаста по модалке  -->
+<div class="modal" data-modal="1">
+    <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+    </svg>
+    <div class="modal__title">
+        <p>
+            Автор сайта
+        <p>
+            Чесноков Александр
+        <p>
+            Что нашел, что смог то и сделяль
+        </p>
+        <img src="img/modal.jpg" width="500" height="500">
+    </div>
+ </div>
+
 
 <div>
     <h1 id="houston" class="intro">Хьюстон</h1>
